@@ -1,1 +1,349 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-rows: 105px;
+    width: 1052px;
+    height: 105px;
+    margin: 92px 24px 96px;
+}
+
+.header__menu {
+    display: block;
+    margin: 44px 36px 39px 26.52px;
+    width: 391.48px;
+    height: 22px;
+}
+
+.header__links-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: circle;
+}
+
+.header__link {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.13px;
+    margin-left: 4px;
+}
+
+.header__links-list-item_no-bullet {
+    list-style: none;
+}
+
+.header__link_active .header__link {
+    text-decoration: none;
+}
+
+.header__logo {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+
+.header__logo-image {
+    height: 100%;
+}
+
+.address {
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 240.52px;
+    height: 98px;
+    margin-right: 25.48px;
+}
+
+.header__address {
+    display: block;
+    columns: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24.3px;
+}
+
+.cover {
+    position: relative;
+    width: 1100px;
+    height: 757px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0/0.6);
+}
+
+.cover__title {
+    position: absolute;
+    margin: 165px 50px 237px 50px;
+    width: 1000px;
+    height: 355px;
+}
+
+.aligned-text {
+    display: block;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 1.22;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.no-letter-spacing {
+    letter-spacing: 22px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.cover__description {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 667px;
+}
+
+.cover__description-text {
+    margin-left: 78px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    word-spacing: 22px;
+    text-transform: uppercase;
+}
+
+.bet-button {
+    margin-right: 50px;
+    border: 1px solid #FFFFFF;
+    padding: 12px 32px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25.83px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.lots {
+    margin: 179px 24px 146px;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+/* Попробовал сделать список grid контейнером
+.lots__card-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 25px;
+    list-style: none;
+}*/
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 334px;
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__card-list-item {
+    flex-grow: 1;
+    width: 334px;
+    min-height: 563px;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 51px 40px 48px;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26.4px;
+    font-style: solid;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.card__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.lots__look-more-link {
+    display: block;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.48px;
+}
+
+.about {
+    margin: 146px 24px 180px;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+    grid-template-rows: 595px;
+    gap: 25px;
+}
+
+.about__logo {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    background-color: #000000;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    justify-self: center;
+    height: 114px;
+    width: 148px;
+}
+
+.about__content {
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 449px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.96px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 312px;
+    width: 693px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 180px 50px 88px;
+}
+
+.footer__menu {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+    color: #000000;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.footer__menu-link_active .fooret__link {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    color: #000000;
+}
+
+.footer__social-list-item {
+    display: flex;
+    gap: 48px;
+}
+
+.footer__social-link {
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.footer__social-icon {
+    height: 100%;
+    width: 100%;
+}
