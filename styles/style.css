@@ -199,9 +199,8 @@
 
 .card__title {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 19px;
     line-height: 26.4px;
-    font-style: solid;
     text-transform: uppercase;
     text-decoration: underline;
     color: #FFFFFF;
@@ -286,7 +285,7 @@
 
 .about__title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 46.96px;
     text-transform: uppercase;
     color: #000000;
