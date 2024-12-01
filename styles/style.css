@@ -6,7 +6,7 @@
 
 .header__menu {
     display: block;
-    margin: 44px 36px 39px 26.52px;
+    margin: 44px 36px 39px 21px;
 }
 
 .header__links-list {
@@ -46,11 +46,8 @@
 .header__address {
     justify-self: end;
     align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 240.52px;
-    margin-right: 25.48px;
+    margin-top: 5px;
+    padding-right: 62.48px;
 }
 
 .address {
@@ -73,6 +70,7 @@
 }
 
 .overlay {
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0/0.6);
@@ -80,7 +78,7 @@
 
 .cover__title {
     position: relative;
-    padding: 160px 50px 135px;
+    padding: 160px 50px 129px;
 }
 
 .aligned-text {
@@ -90,16 +88,19 @@
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 100px;
-    line-height: 1.22;
-    letter-spacing: 25px;
+    line-height: 127px;
+    letter-spacing: 30px;
 }
 
 .aligned-text_center {
     text-align: center;
+    line-height: 127px;
+    letter-spacing: 30px;
 }
 
 .aligned-text_right {
     text-align: right;
+    line-height: 112px;
 }
 
 .no-letter-spacing {
@@ -116,7 +117,7 @@
     align-items: center;
     width: 100%;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 51px;
 }
 
 .cover__description-text {
@@ -126,7 +127,7 @@
     font-size: 22px;
     line-height: 28px;
     color: #FFFFFF;
-    word-spacing: 22px;
+    word-spacing: 19px;
     text-transform: uppercase;
 }
 
@@ -144,7 +145,7 @@
 }
 
 .lots {
-    margin: 174px 24px 146px;
+    margin: 180px 24px 146px;
 }
 
 .lots__heading {
@@ -182,6 +183,8 @@
 }
 
 .card-link {
+    position: relative;
+    z-index: -1;
     display: block;
     text-decoration: none;
     background-repeat: no-repeat;
@@ -191,6 +194,7 @@
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,8 +271,7 @@
 }
 
 .about__content {
-    margin-top: 133px;
-    margin-bottom: 5px;
+    margin-top: 137px;
     align-self: end;
     display: flex;
     flex-direction: column;
@@ -278,7 +281,7 @@
 .about__title {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 46.96px;
     text-transform: uppercase;
     color: #000000;
@@ -295,6 +298,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    letter-spacing: 0cap;
 }
 
 .footer {
@@ -303,7 +307,12 @@
     margin: 180px 50px 88px;
 }
 
+.footer__address {
+    text-align: left;
+}
+
 .footer__menu {
+    padding-left: 37px;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     font-size: 18px;
